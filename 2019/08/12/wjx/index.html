@@ -5,15 +5,19 @@
   
 
   
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="素数作业    五角星作业">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://ximendaguanren66.github.io/archives/index.html">
+<meta property="og:url" content="http://ximendaguanren66.github.io/2019/08/12/wjx/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="素数作业    五角星作业">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-12T07:23:55.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="素数作业    五角星作业">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,95 +64,109 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/12/wjx/" class="archive-article-date">
-  <time datetime="2019-08-12T06:46:28.122Z" itemprop="datePublished">Aug 12</time>
+        <section id="main"><article id="post-wjx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/12/wjx/" class="article-date">
+  <time datetime="2019-08-12T06:46:28.122Z" itemprop="datePublished">2019-08-12</time>
 </a>
-      
-    </header>
+    
   </div>
-</article>
-  
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/12/xinwen/" class="archive-article-date">
-  <time datetime="2019-08-12T05:59:08.196Z" itemprop="datePublished">Aug 12</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/06/zuoye/" class="archive-article-date">
-  <time datetime="2019-08-06T12:05:41.000Z" itemprop="datePublished">Aug 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/06/zuoye/">PHP 基础语法</a>
-    </h1>
-  
+        <h4 id="素数作业"><a href="#素数作业" class="headerlink" title="素数作业"></a>素数作业</h4><?php
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/09/15/a/" class="archive-article-date">
-  <time datetime="2017-09-15T11:00:41.000Z" itemprop="datePublished">Sep 15</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/15/a/">搭建的apache + php + mysql的环境（要求使用php5.6）</a>
-    </h1>
-  
+while (1){
+    echo "请输入：";
+    $num=fgets(STDIN);
+    $num=trim($num);
+//    settype($num,int);
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+for($i=2;$i<$num;$i++){
+    if($num%$i==0){
+        echo "{$num}不是素数";
+        break;
 
+​    }
+​    if($i >=sqrt($num)){
+​        echo "$num 是素数";
+​        break;
+​    }
+}
+
+}
+
+?>
+
+
+
+<h4 id="五角星作业"><a href="#五角星作业" class="headerlink" title="五角星作业"></a>五角星作业</h4><?php
+
+echo "\n\n";
+五角星的上面一个角
+for ($i1 = 1; $i1 < 6; $i1++){
+    for ($j1 = 1; $j1 < 19 - $i1; $j1++)
+        printf(" ");
+    for ($k1 = 1; $k1 <= 2 * $i1 - 1; $k1++)
+        printf("*");
+    printf("\n");
+}
+
+五角星的中间两个角 
+for ($i2 = 1; $i2 < 5; $i2++){
+    for ($j2 = 1; $j2 < 3 * $i2 - 3; $j2++)
+        printf(" ");
+    for ($k2 = 1; $k2 <= 42 - 6 * $i2; $k2++)
+        printf("*");
+    printf("\n");
+}
+中间与下部相接的部分
+for ($i3 = 1; $i3 < 3; $i3++){
+    for ($j3 = 1; $j3 < 12 - $i3; $j3++)
+        printf(" ");
+    for ($k3 = 1; $k3 <= 12 + 2 * $i3; $k3++)
+        printf("*");
+    printf("\n");
+}
+
+五角星的下面两个角
+for ($i4 = 1; $i4 < 5; $i4++){
+    for ($j4 = 1; $j4 < 10 - $i4; $j4++)
+        printf(" ");
+    for ($k4 = 1; $k4 <= 10 - 2 * $i4; $k4++)
+        printf("*");
+    for ($m4 = 1; $m4 < 6 * $i4 - 3; $m4++)
+        printf(" ");
+    for ($n4 = 1; $n4 <= 10 - 2 * $i4; $n4++)
+        printf("*");
+    printf("\n");
+}
+
+?>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ximendaguanren66.github.io/2019/08/12/wjx/" data-id="cjz82n6ag000128rc1dyc6b5u" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/12/xinwen/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

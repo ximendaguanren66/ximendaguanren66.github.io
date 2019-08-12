@@ -62,6 +62,100 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-wjx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/12/wjx/" class="article-date">
+  <time datetime="2019-08-12T06:46:28.122Z" itemprop="datePublished">2019-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="素数作业"><a href="#素数作业" class="headerlink" title="素数作业"></a>素数作业</h4><?php
+
+while (1){
+    echo "请输入：";
+    $num=fgets(STDIN);
+    $num=trim($num);
+//    settype($num,int);
+
+for($i=2;$i<$num;$i++){
+    if($num%$i==0){
+        echo "{$num}不是素数";
+        break;
+
+​    }
+​    if($i >=sqrt($num)){
+​        echo "$num 是素数";
+​        break;
+​    }
+}
+
+}
+
+?>
+
+
+
+<h4 id="五角星作业"><a href="#五角星作业" class="headerlink" title="五角星作业"></a>五角星作业</h4><?php
+
+echo "\n\n";
+五角星的上面一个角
+for ($i1 = 1; $i1 < 6; $i1++){
+    for ($j1 = 1; $j1 < 19 - $i1; $j1++)
+        printf(" ");
+    for ($k1 = 1; $k1 <= 2 * $i1 - 1; $k1++)
+        printf("*");
+    printf("\n");
+}
+
+五角星的中间两个角 
+for ($i2 = 1; $i2 < 5; $i2++){
+    for ($j2 = 1; $j2 < 3 * $i2 - 3; $j2++)
+        printf(" ");
+    for ($k2 = 1; $k2 <= 42 - 6 * $i2; $k2++)
+        printf("*");
+    printf("\n");
+}
+中间与下部相接的部分
+for ($i3 = 1; $i3 < 3; $i3++){
+    for ($j3 = 1; $j3 < 12 - $i3; $j3++)
+        printf(" ");
+    for ($k3 = 1; $k3 <= 12 + 2 * $i3; $k3++)
+        printf("*");
+    printf("\n");
+}
+
+五角星的下面两个角
+for ($i4 = 1; $i4 < 5; $i4++){
+    for ($j4 = 1; $j4 < 10 - $i4; $j4++)
+        printf(" ");
+    for ($k4 = 1; $k4 <= 10 - 2 * $i4; $k4++)
+        printf("*");
+    for ($m4 = 1; $m4 < 6 * $i4 - 3; $m4++)
+        printf(" ");
+    for ($n4 = 1; $n4 <= 10 - 2 * $i4; $n4++)
+        printf("*");
+    printf("\n");
+}
+
+?>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ximendaguanren66.github.io/2019/08/12/wjx/" data-id="cjz82n6ag000128rc1dyc6b5u" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-xinwen" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/12/xinwen/" class="article-date">
@@ -208,7 +302,7 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ximendaguanren66.github.io/2019/08/12/xinwen/" data-id="cjz82h6ya00018orc4ebq9tzc" class="article-share-link">Share</a>
+      <a data-url="http://ximendaguanren66.github.io/2019/08/12/xinwen/" data-id="cjz82n6aw000228rc4e4q4cs5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -283,7 +377,7 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ximendaguanren66.github.io/2019/08/06/zuoye/" data-id="cjz82h6yq00028orc56fcx0y6" class="article-share-link">Share</a>
+      <a data-url="http://ximendaguanren66.github.io/2019/08/06/zuoye/" data-id="cjz82n6aw000328rcv258netn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -325,7 +419,7 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ximendaguanren66.github.io/2017/09/15/a/" data-id="cjz82h6ya00008orcxjahlpbi" class="article-share-link">Share</a>
+      <a data-url="http://ximendaguanren66.github.io/2017/09/15/a/" data-id="cjz82n6ag000028rcuhkz0ihm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -364,6 +458,10 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/08/12/wjx/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/08/12/xinwen/">(no title)</a>
