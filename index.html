@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://ximendaguanren66.github.io/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ximendaguanren66.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-xinwen" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/12/xinwen/" class="article-date">
+  <time datetime="2019-08-12T05:59:08.196Z" itemprop="datePublished">2019-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>title: 新闻展示作业<br>date: 2019-08-8 21:33:07<br>tags:</p>
+<h5 id="展示页面"><a href="#展示页面" class="headerlink" title="展示页面"></a>展示页面</h5><!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8"> 
+    <title>新闻首页</title> 
+    <style type="text/css">
+        table {
+            width: 80%;
+        }
+        th {
+            width: 300px;
+            text-align: center;
+            height: 50px;
+        }
+        td {
+            height: 30px;
+            width: 300px;
+            text-align: center;
+        }
+        img {
+            /*width: 250px;*/
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <br><br><br>
+    <h1>ICQ现象社</h1>
+    <br><br>
+    <hr>
+    <table>
+        <tr>
+            <th>热度</th>
+            <th>标题</th>
+            <th>作者</th>
+            <th>发表时间</th>
+            <th>操作</th>
+        </tr>
+        <?php
+        $f=fopen('data/news.db','r');
+        $i=1;
+        while(!feof($f)){
+            $tmp=fgets($f);
+            $data=explode('||',$tmp);
+            if(count($data) !=8){
+                continue;
+            }
+            echo_table($data);
+            if($i<3){
+                echo_info($data);
+            }
+            $i++;
+        }
+        ?>
+    </table>
+    <hr>
+    <br>
+    <br>
+    <h3>版权所有</h3>
+    <h3>2019 ICQ  意见反馈 京ICP证998号  京公网安备8888888888号</h3>
+    <br>
+</center>
+</body>
+</html>
+<?php
+function echo_info($data){
+    $content = substr(base64_decode($data[3]),0,300);
+    $img_url=base64_decode(($data[6]));
+    echo <<<eof
+    <tr>
+        <td><img src="$img_url"></td>
+        <td colspan="4">{$content }</td>
+
+eof;
+}
+
+
+
+<p>function echo_table($data){<br>    $hot = base64_decode($data[0]);<br>    $title=base64_decode($data[1]);<br>    $content=base64_decode($data[2]);<br>    $author = base64_decode($data[3]);<br>    $add_date=date($data[4]);<br>    echo &lt;&lt;&lt;EOF<br>    <tr><br>        <td>{$hot}</td><br>        <td>{$title}</td><br>        <td>}{$content}</td>&gt;<br>        <td>{$author}</td><br>        <td>{$add_date}</td><br>    </tr><br>EOF;<br>}<br>?&gt;</p>
+<h4 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h4><!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+
+<pre><code>&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot;href=&quot;css/login.css&quot;&gt;
+&lt;script type=&quot;text/coffeescript&quot;src=&quot;js/login.js&quot;&gt;&lt;/script&gt;</code></pre></head>
+<body>
+<center>
+<div>
+        <h1>登录</h1>
+</div>
+    <form action="login.php" method="post">
+        <br>
+        <input type="text" name="uname" placeholder="手机号">
+        <br>
+        <input type="password" name="upass" placeholder="密码">
+        <br>
+
+<pre><code>    &lt;a class=&quot;getpass&quot; href=&quot;getpass.php&quot;&gt;忘记密码&lt;/a&gt;
+    &lt;input type=&quot;submit&quot;value=&quot;登录&quot;&gt;
+&lt;/form&gt;
+&lt;/center&gt;</code></pre></form></center></body>
+
+</html>
+
+
+
+<?php
+$uname=base64_encode($_POST['uname']);
+$upass=base64_encode($_POST['upass']);
+if ($uname&&$upass){
+    $f=fopen('data/users.db','r');
+
+    while (!feof($f)){
+        $data=fgets($f);
+        $arr=explode('||',$data);
+
+        if (count($arr)!=6){
+            continue;
+        }
+        if ($arr[1]==$uname &&  $arr[2]==$upass){
+            echo "<script>alert('登陆成功！跳转到展示页面！');location.href='index.php';";
+             break;
+        }
+    }
+    echo "<script>alert('用户名或密码错误，请重新登录');location.href='login.html';</script>";
+}
+?>
+
+<h4 id="注册界面"><a href="#注册界面" class="headerlink" title="注册界面"></a>注册界面</h4><!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<center>
+<div>
+    <h1>注册</h1>
+</div>
+<form action="reg_user.php" method="post">
+    <br>
+    <input type="text" name="uname" placeholder="手机号">
+    <br>
+    <input type="password" name="upass" placeholder="密码">
+    <br>
+    <input type="email" name="umail" placeholder="邮箱">
+    <br>
+    <input type="submit" value="注册">
+</form>
+    </center>
+</body>
+</html>
+
+<?php
+$uname  =base64_encode($_POST['uname']);
+
+$upass  =base64_encode($_POST['upass']);
+
+$umail  =base64_encode($_POST['umail']);
+
+$img_url=base64_encode($_POST['img_url']);
+
+$date="1||{$uname}||{$upass}||{$umail}||{$img_url}||{$date}\n";
+
+$f=fopen('data/users.db','a');
+
+fwrite ($f,$date);
+
+fclose($f);
+
+    echo"<script>alert('注册成功！将跳转到登录页面！');location.href='login.html'";
+
+?>
+
+
+
+<h4 id="添加新闻页面"><a href="#添加新闻页面" class="headerlink" title="添加新闻页面"></a>添加新闻页面</h4><!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <title>添加新闻s</title>
+    <style type="text/css">
+        input{
+            height: 50px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<center>
+<div>
+    <h3>请输入要添加的新闻内容</h3>
+    <form action="add_new.php" method="post">
+    <p>标题</p>
+    <input type="text" name="title" placeholder="输入新闻标题">
+    <p>内容</p>
+    <textarea type="content" cols="30" rows="10" placeholder="输入新闻内容"></textarea>
+    <p>作者</p>
+    <input type="text" name="auther" placeholder="输入新闻作者">
+    <p>预览图</p>
+    <input type="text" name="img_url" placeholder="输入新闻预览图片地址">
+    <br>
+    <input type="submit">
+</form>
+</div>
+</center>
+</body>
+</html>
+
+
+
+<?php
+$title=base64_encode($_POST['title']);
+
+$author=base64_encode($_POST['author']);
+
+$content=base64_encode($_POST['content']);
+
+$img_url=base64_encode($_POST['img_url']);
+
+$data=time();
+
+$data="1||{$title}||{$content}||{$author}||{$data}||0||null||{$img_url}\n";
+
+$f=fopen('data/news.db','a');
+
+fwrite($f,$data);
+
+fclose($f);
+
+echo "<script>alert('添加成功，跳转到展示页面');location.href='index.php';";
+
+?>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ximendaguanren66.github.io/2019/08/12/xinwen/" data-id="cjz816wcs00011orcbsfrthfj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-a" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/12/a/" class="article-date">
+  <time datetime="2019-08-12T05:53:37.000Z" itemprop="datePublished">2019-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/12/a/">a</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ximendaguanren66.github.io/2019/08/12/a/" data-id="cjz816wci00001orcqpzqofri" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/12/xinwen/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/12/a/">a</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
