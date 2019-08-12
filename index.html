@@ -155,77 +155,27 @@
     <article id="post-wjx" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/06/wjx/">作业</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/06/wjx/" class="archive-article-date">
+  	<time datetime="2019-08-06T12:05:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="素数作业"><a href="#素数作业" class="headerlink" title="素数作业"></a>素数作业</h4><?php
-
-while (1){
-    echo "请输入：";
-    $num=fgets(STDIN);
-    $num=trim($num);
-//    settype($num,int);
-
-for($i=2;$i<$num;$i++){
-    if($num%$i==0){
-        echo "{$num}不是素数";
-        break;
-
-​    }
-​    if($i >=sqrt($num)){
-​        echo "$num 是素数";
-​        break;
-​    }
-}
-
-}
-
-?>
+        <p>####素数作业</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">while (1)&#123;</span><br><span class="line">    echo &quot;请输入：&quot;;</span><br><span class="line">    $num=fgets(STDIN);</span><br><span class="line">    $num=trim($num);</span><br><span class="line">    settype($num,int);</span><br><span class="line"></span><br><span class="line">for($i=2;$i&lt;$num;$i++)&#123;</span><br><span class="line">    if($num%$i==0)&#123;</span><br><span class="line">        echo &quot;&#123;$num&#125;不是素数&quot;;</span><br><span class="line">        break;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line">​    if($i &gt;=sqrt($num))&#123;</span><br><span class="line">​        echo &quot;$num 是素数&quot;;</span><br><span class="line">​        break;</span><br><span class="line">​    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 五角星作业</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">echo &quot;\n\n&quot;;</span><br><span class="line">五角星的上面一个角</span><br><span class="line">for ($i1 = 1; $i1 &lt; 6; $i1++)&#123;</span><br><span class="line">    for ($j1 = 1; $j1 &lt; 19 - $i1; $j1++)</span><br><span class="line">        printf(&quot; &quot;);</span><br><span class="line">    for ($k1 = 1; $k1 &lt;= 2 * $i1 - 1; $k1++)</span><br><span class="line">        printf(&quot;*&quot;);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">五角星的中间两个角 </span><br><span class="line">for ($i2 = 1; $i2 &lt; 5; $i2++)&#123;</span><br><span class="line">    for ($j2 = 1; $j2 &lt; 3 * $i2 - 3; $j2++)</span><br><span class="line">        printf(&quot; &quot;);</span><br><span class="line">    for ($k2 = 1; $k2 &lt;= 42 - 6 * $i2; $k2++)</span><br><span class="line">        printf(&quot;*&quot;);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line">中间与下部相接的部分</span><br><span class="line">for ($i3 = 1; $i3 &lt; 3; $i3++)&#123;</span><br><span class="line">    for ($j3 = 1; $j3 &lt; 12 - $i3; $j3++)</span><br><span class="line">        printf(&quot; &quot;);</span><br><span class="line">    for ($k3 = 1; $k3 &lt;= 12 + 2 * $i3; $k3++)</span><br><span class="line">        printf(&quot;*&quot;);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">五角星的下面两个角</span><br><span class="line">for ($i4 = 1; $i4 &lt; 5; $i4++)&#123;</span><br><span class="line">    for ($j4 = 1; $j4 &lt; 10 - $i4; $j4++)</span><br><span class="line">        printf(&quot; &quot;);</span><br><span class="line">    for ($k4 = 1; $k4 &lt;= 10 - 2 * $i4; $k4++)</span><br><span class="line">        printf(&quot;*&quot;);</span><br><span class="line">    for ($m4 = 1; $m4 &lt; 6 * $i4 - 3; $m4++)</span><br><span class="line">        printf(&quot; &quot;);</span><br><span class="line">    for ($n4 = 1; $n4 &lt;= 10 - 2 * $i4; $n4++)</span><br><span class="line">        printf(&quot;*&quot;);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
 
-
-<h4 id="五角星作业"><a href="#五角星作业" class="headerlink" title="五角星作业"></a>五角星作业</h4><?php
-
-echo "\n\n";
-五角星的上面一个角
-for ($i1 = 1; $i1 < 6; $i1++){
-    for ($j1 = 1; $j1 < 19 - $i1; $j1++)
-        printf(" ");
-    for ($k1 = 1; $k1 <= 2 * $i1 - 1; $k1++)
-        printf("*");
-    printf("\n");
-}
-
-五角星的中间两个角 
-for ($i2 = 1; $i2 < 5; $i2++){
-    for ($j2 = 1; $j2 < 3 * $i2 - 3; $j2++)
-        printf(" ");
-    for ($k2 = 1; $k2 <= 42 - 6 * $i2; $k2++)
-        printf("*");
-    printf("\n");
-}
-中间与下部相接的部分
-for ($i3 = 1; $i3 < 3; $i3++){
-    for ($j3 = 1; $j3 < 12 - $i3; $j3++)
-        printf(" ");
-    for ($k3 = 1; $k3 <= 12 + 2 * $i3; $k3++)
-        printf("*");
-    printf("\n");
-}
-
-五角星的下面两个角
-for ($i4 = 1; $i4 < 5; $i4++){
-    for ($j4 = 1; $j4 < 10 - $i4; $j4++)
-        printf(" ");
-    for ($k4 = 1; $k4 <= 10 - 2 * $i4; $k4++)
-        printf("*");
-    for ($m4 = 1; $m4 < 6 * $i4 - 3; $m4++)
-        printf(" ");
-    for ($n4 = 1; $n4 <= 10 - 2 * $i4; $n4++)
-        printf("*");
-    printf("\n");
-}
-
-?>
       
 
       
@@ -237,7 +187,7 @@ for ($i4 = 1; $i4 < 5; $i4++){
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/12/wjx/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/06/wjx/">展开全文 >></a>
         </p>
       
 
@@ -287,12 +237,9 @@ for ($i4 = 1; $i4 < 5; $i4++){
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>PHP 基础语法</p>
-<!--
-# 1. if__els__
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">        &lt;?php</span><br><span class="line"></span><br><span class="line">    if()&#123;        //括号中放条件</span><br><span class="line">     执行指令1</span><br><span class="line">       &#125;else&#123;</span><br><span class="line">     执行指令2</span><br><span class="line">       &#125;</span><br><span class="line">           ?&gt;</span><br><span class="line">```           </span><br><span class="line"># 2.  switch__case__</span><br></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 1. if__els__</span><br><span class="line"></span><br><span class="line">        &lt;?php</span><br><span class="line"></span><br><span class="line">    if()&#123;        //括号中放条件</span><br><span class="line">     执行指令1</span><br><span class="line">       &#125;else&#123;</span><br><span class="line">     执行指令2</span><br><span class="line">       &#125;</span><br><span class="line">           ?&gt;</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
 
-  <? php
+<h1 id="2-switch-case"><a href="#2-switch-case" class="headerlink" title="2.  switch__case__"></a>2.  switch__case__</h1>  <? php
 
    switch ()  //括号中放条件
      {
@@ -342,9 +289,8 @@ while(){   //括号中放条件
 <p>循环输出一周</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">  while ($n&lt;7) &#123;</span><br><span class="line">    ++$n;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if ($n &gt;= 1 &amp;&amp; $n &lt;=5) &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   上课!\n&quot;;</span><br><span class="line">&#125; elseif ($n == 6) &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   休息\n&quot;;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   洗衣服\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">？&gt;</span><br></pre></td></tr></table></figure>
 
-<p>–&gt;</p>
 <p>​    </p>
--->
+
       
 
       
@@ -406,51 +352,13 @@ while(){   //括号中放条件
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>搭建的apache + php + mysql的环境</p>
-<!--
-＃安装httpd
- yum install httpd httpd-devel httpd-manual mod_ssl -y 
-＃启动apache
- systemctl start httpd 
-＃设置apache开机启动
- systemctl enable httpd 
-＃查看开放端口，检查有没有httpd服务，80和443端口是否开放
- ss -antlp
-配置防火墙，可以正常访问阿帕奇
+        <p>＃安装httpd<br> yum install httpd httpd-devel httpd-manual mod_ssl -y<br>＃启动apache<br> systemctl start httpd<br>＃设置apache开机启动<br> systemctl enable httpd<br>＃查看开放端口，检查有没有httpd服务，80和443端口是否开放<br> ss -antlp<br>配置防火墙，可以正常访问阿帕奇</p>
+<p>firewall-cmd –zone = public –add-port = 80 / tcp<br>–permanent firewall-cmd –zone = public –add-port = 433 / tcp<br>–permanent firewall-cmd –reload</p>
+<p>安装php5.6<br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/epel-release.rpm" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/epel-release.rpm</a><br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/webtatic-release.rpm#overload" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/webtatic-release.rpm#overload</a><br>system. php<br> yum删除php-common -y </p>
+<p>＃安装php5.6和php扩展<br> yum install -y php56w php56w-opcache php56w-xml php56w-mcrypt php56w-gd php56w-mysql php56w-intl php56w-mbstring </p>
+<p>＃进入网站根目录<br>cd / var / www / html /<br>＃在网站根目录中创建index.php，<br>写入phpinfo函数，测试网站php是否正常<br>echo  ‘&lt;？php phpinfo（）;？&gt;’ &gt; index.php</p>
+<p>安装MariaDB的<br>yum install mariadb-server -y<br>＃启动mariadb-server<br> systemctl start mariadb<br>＃设置mariadb-server开机自启<br> systemctl enablemariadb<br>＃ mysql初始化，注意记住mysql密码<br> mysql_secure_installation<br>＃ 重启mariadb服务，读取my.cnf新配置<br>systemctl restart mariadb<br>＃ 登录数据库，查看字符编码<br>mysql -uroot -p<br>输入 \s  查看编码 </p>
 
-firewall-cmd --zone = public --add-port = 80 / tcp 
---permanent firewall-cmd --zone = public --add-port = 433 / tcp 
---permanent firewall-cmd --reload
-
-安装php5.6
-rpm -Uvh https://mirror.webtatic.com/yum/el7/epel-release.rpm 
-rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm#overload 
-system. php
- yum删除php-common -y 
-
-＃安装php5.6和php扩展
- yum install -y php56w php56w-opcache php56w-xml php56w-mcrypt php56w-gd php56w-mysql php56w-intl php56w-mbstring 
-
-＃进入网站根目录
-cd / var / www / html / 
-＃在网站根目录中创建index.php，
-写入phpinfo函数，测试网站php是否正常
-echo  '<？php phpinfo（）;？>' > index.php
-
-安装MariaDB的
-yum install mariadb-server -y 
-＃启动mariadb-server
- systemctl start mariadb 
-＃设置mariadb-server开机自启
- systemctl enablemariadb 
-＃ mysql初始化，注意记住mysql密码
- mysql_secure_installation 
-＃ 重启mariadb服务，读取my.cnf新配置
-systemctl restart mariadb 
-＃ 登录数据库，查看字符编码
-mysql -uroot -p
-输入 \s  查看编码 
--->
       
 
       
