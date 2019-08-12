@@ -74,72 +74,70 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title: 新闻展示作业<br>date: 2019-08-8 21:33:07<br>tags:</p>
-<h5 id="展示页面"><a href="#展示页面" class="headerlink" title="展示页面"></a>展示页面</h5><!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8"> 
-    <title>新闻首页</title> 
-    <style type="text/css">
-        table {
-            width: 80%;
-        }
-        th {
-            width: 300px;
-            text-align: center;
-            height: 50px;
-        }
-        td {
-            height: 30px;
-            width: 300px;
-            text-align: center;
-        }
-        img {
-            /*width: 250px;*/
-            height: 100px;
-        }
-    </style>
-</head>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 新闻展示作业</span><br><span class="line">date: 2019-08-8 21:33:07</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
+
+<h5 id="展示页面"><a href="#展示页面" class="headerlink" title="展示页面"></a>展示页面</h5><h6 id><a href="#" class="headerlink" title="//"></a>//<!DOCTYPE html></h6><p>//<html><br>//<head><meta name="generator" content="Hexo 3.9.0"></head></html></p>
+<p>//    <meta charset="utf-8"><br>//    <title>新闻首页</title><br>//    <style type="text/css"><br>        table {<br>            width: 80%;<br>        }<br>        th {<br>            width: 300px;<br>            text-align: center;<br>            height: 50px;<br>        }<br>        td {<br>            height: 30px;<br>            width: 300px;<br>            text-align: center;<br>        }<br>        img {<br>            /<em>width: 250px;</em>/<br>            height: 100px;<br>        }<br>    </style></p>
+
 <body>
-<center>
-    <br><br><br>
-    <h1>ICQ现象社</h1>
-    <br><br>
-    <hr>
-    <table>
-        <tr>
-            <th>热度</th>
-            <th>标题</th>
-            <th>作者</th>
-            <th>发表时间</th>
-            <th>操作</th>
-        </tr>
-        <?php
-        $f=fopen('data/news.db','r');
-        $i=1;
-        while(!feof($f)){
-            $tmp=fgets($f);
-            $data=explode('||',$tmp);
-            if(count($data) !=8){
-                continue;
-            }
-            echo_table($data);
-            if($i<3){
-                echo_info($data);
-            }
-            $i++;
-        }
-        ?>
-    </table>
-    <hr>
-    <br>
-    <br>
-    <h3>版权所有</h3>
-    <h3>2019 ICQ  意见反馈 京ICP证998号  京公网安备8888888888号</h3>
-    <br>
-</center>
+
+
+
+<p>//<center><br>    <br><br><br></center></p>
+<p>//    </p><h1>ICQ现象社</h1><p></p>
+<p>​    <br><br></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr&gt;</span><br><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;热度&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;标题&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;作者&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;发表时间&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;操作&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;?php</span><br><span class="line">    $f=fopen(&apos;data/news.db&apos;,&apos;r&apos;);</span><br><span class="line">    $i=1;</span><br><span class="line">    while(!feof($f))&#123;</span><br><span class="line">        $tmp=fgets($f);</span><br><span class="line">        $data=explode(&apos;||&apos;,$tmp);</span><br><span class="line">        if(count($data) !=8)&#123;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        echo_table($data);</span><br><span class="line">        if($i&lt;3)&#123;</span><br><span class="line">            echo_info($data);</span><br><span class="line">        &#125;</span><br><span class="line">        $i++;</span><br><span class="line">    &#125;</span><br><span class="line">    ?&gt;</span><br></pre></td></tr></table></figure>
+
+<p> // <br>    <hr><br>    <br><br>//  <br><br>    </p><h3>版权所有</h3><br>    <h3>2019 ICQ  意见反馈 京ICP证998号  京公网安备8888888888号</h3><br>    <br><br>//<p></p>
+<p>//</p></body><br>//<br>&lt;?php<br>function echo_info($data){<br>    $content = substr(base64_decode($data[3]),0,300);<br>    $img_url=base64_decode(($data[6]));<br>    echo &lt;&lt;&lt;eof<br>    <tr><br>        <td><img src="$img_url"></td><br>        <td colspan="4">{$content }</td><p></p>
+</tr>
+eof;
+}
+
+
+
+<p>function echo_table($data){<br>    $hot = base64_decode($data[0]);<br>    $title=base64_decode($data[1]);<br>    $content=base64_decode($data[2]);<br>    $author = base64_decode($data[3]);<br>    $add_date=date($data[4]);<br>    echo &lt;&lt;&lt;EOF<br>    <tr><br>        <td>{$hot}</td><br>        <td>{$title}</td><br>        <td>}{$content}</td>&gt;<br>        <td>{$author}</td><br>        <td>{$add_date}</td><br>    </tr><br>EOF;<br>}<br>?&gt;</p>
+<h4 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h4><p>//<!DOCTYPE html><br>//<html lang="en"><br>//<head><meta name="generator" content="Hexo 3.9.0"><br>//    <meta charset="UTF-8"><br>//  <title>登录页面</title></head></html></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot;href=&quot;css/login.css&quot;&gt;</span><br><span class="line">&lt;script type=&quot;text/coffeescript&quot;src=&quot;js/login.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+<body>
+
+<p>//<center><br>//<div></div></center></p>
+<p>//       </p><h1>登录</h1><p></p>
+<p>//<br>//   &lt;form action=”login.php”method=”post”&gt;<br>        <br><br>        &lt;input type=”text”name=”uname”placeholder=”手机号”&gt;<br>        <br><br>        &lt;input type=”password”name=”upass”placeholder=”密码”&gt;<br>        <br></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    &lt;a class=&quot;getpass&quot; href=&quot;getpass.php&quot;&gt;忘记密码&lt;/a&gt;</span><br><span class="line">    &lt;input type=&quot;submit&quot;value=&quot;登录&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+
 </body>
-</html>
+
+
+
+
+
+<?php
+$uname=base64_encode($_POST['uname']);
+$upass=base64_encode($_POST['upass']);
+if ($uname&&$upass){
+    $f=fopen('data/users.db','r');
+
+while (!feof($f)){
+    $data=fgets($f);
+    $arr=explode('||',$data);
+
+​    if (count($arr)!=6){
+​        continue;
+​    }
+​    if ($arr[1]==$uname &&  $arr[2]==$upass){
+​        echo "<script>alert('登陆成功！跳转到展示页面！');location.href='index.php';";
+​         break;
+​    }
+}
+echo "<script>alert('用户名或密码错误，请重新登录');location.href='login.html';</script>";
+
+}
+?>
+
+<h4 id="注册界面"><a href="#注册界面" class="headerlink" title="注册界面"></a>注册界面</h4><p>//<!DOCTYPE html><br>//<html lang="en"><br>//<head><meta name="generator" content="Hexo 3.9.0"><br>//   <meta charset="UTF-8"><br>//  <title>注册</title><br>//</head><br>//<body><br>//<center><br>//<div><br>//  <h1>注册</h1><br>//</div><br>//&lt;form action=”reg_user.php”method=”post”&gt;<br>//   <br><br>//  &lt;input type=”text”name=”uname”placeholder=”手机号”&gt;<br>//   <br><br>//   &lt;input type=”password”name=”upass”placeholder=”密码”&gt;</center></body></html></p>
 <?php
 function echo_info($data){
     $content = substr(base64_decode($data[3]),0,300);
@@ -151,85 +149,13 @@ function echo_info($data){
 
 eof;
 }
-
-
-
-<p>function echo_table($data){<br>    $hot = base64_decode($data[0]);<br>    $title=base64_decode($data[1]);<br>    $content=base64_decode($data[2]);<br>    $author = base64_decode($data[3]);<br>    $add_date=date($data[4]);<br>    echo &lt;&lt;&lt;EOF<br>    <tr><br>        <td>{$hot}</td><br>        <td>{$title}</td><br>        <td>}{$content}</td>&gt;<br>        <td>{$author}</td><br>        <td>{$add_date}</td><br>    </tr><br>EOF;<br>}<br>?&gt;</p>
-<h4 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h4><!DOCTYPE html>
-<html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-    <title>登录页面</title>
-
-<pre><code>&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot;href=&quot;css/login.css&quot;&gt;
-&lt;script type=&quot;text/coffeescript&quot;src=&quot;js/login.js&quot;&gt;&lt;/script&gt;</code></pre></head>
-<body>
-<center>
-<div>
-        <h1>登录</h1>
-</div>
-    <form action="login.php" method="post">
-        <br>
-        <input type="text" name="uname" placeholder="手机号">
-        <br>
-        <input type="password" name="upass" placeholder="密码">
-        <br>
-
-<pre><code>    &lt;a class=&quot;getpass&quot; href=&quot;getpass.php&quot;&gt;忘记密码&lt;/a&gt;
-    &lt;input type=&quot;submit&quot;value=&quot;登录&quot;&gt;
-&lt;/form&gt;
-&lt;/center&gt;</code></pre></form></center></body>
-
-</html>
-
-
-
-<?php
-$uname=base64_encode($_POST['uname']);
-$upass=base64_encode($_POST['upass']);
-if ($uname&&$upass){
-    $f=fopen('data/users.db','r');
-
-    while (!feof($f)){
-        $data=fgets($f);
-        $arr=explode('||',$data);
-
-        if (count($arr)!=6){
-            continue;
-        }
-        if ($arr[1]==$uname &&  $arr[2]==$upass){
-            echo "<script>alert('登陆成功！跳转到展示页面！');location.href='index.php';";
-             break;
-        }
-    }
-    echo "<script>alert('用户名或密码错误，请重新登录');location.href='login.html';</script>";
-}
-?>
-
-<h4 id="注册界面"><a href="#注册界面" class="headerlink" title="注册界面"></a>注册界面</h4><!DOCTYPE html>
-<html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-    <title>注册</title>
-</head>
-<body>
-<center>
-<div>
-    <h1>注册</h1>
-</div>
-<form action="reg_user.php" method="post">
-    <br>
-    <input type="text" name="uname" placeholder="手机号">
-    <br>
-    <input type="password" name="upass" placeholder="密码">
-    <br>
-    <input type="email" name="umail" placeholder="邮箱">
+//    <input type="email" name="umail" placeholder="邮箱">
     <br>
     <input type="submit" value="注册">
-</form>
-    </center>
-</body>
-</html>
+
+    
+
+
 
 <?php
 $uname  =base64_encode($_POST['uname']);
@@ -248,47 +174,15 @@ fwrite ($f,$date);
 
 fclose($f);
 
-    echo"<script>alert('注册成功！将跳转到登录页面！');location.href='login.html'";
+echo"<script>alert('注册成功！将跳转到登录页面！');location.href='login.html'";
 
 ?>
 
 
 
-<h4 id="添加新闻页面"><a href="#添加新闻页面" class="headerlink" title="添加新闻页面"></a>添加新闻页面</h4><!DOCTYPE html>
-<html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-    <title>添加新闻s</title>
-    <style type="text/css">
-        input{
-            height: 50px;
-            width: 150px;
-        }
-    </style>
-</head>
-<body>
-<center>
-<div>
-    <h3>请输入要添加的新闻内容</h3>
-    <form action="add_new.php" method="post">
-    <p>标题</p>
-    <input type="text" name="title" placeholder="输入新闻标题">
-    <p>内容</p>
-    <textarea type="content" cols="30" rows="10" placeholder="输入新闻内容"></textarea>
-    <p>作者</p>
-    <input type="text" name="auther" placeholder="输入新闻作者">
-    <p>预览图</p>
-    <input type="text" name="img_url" placeholder="输入新闻预览图片地址">
-    <br>
-    <input type="submit">
-</form>
-</div>
-</center>
-</body>
-</html>
-
-
-
+<h4 id="添加新闻页面"><a href="#添加新闻页面" class="headerlink" title="添加新闻页面"></a>添加新闻页面</h4><p>//<!DOCTYPE html><br>//<html lang="en"><br>//<head><meta name="generator" content="Hexo 3.9.0"><br>//    <meta charset="UTF-8"><br>//    <title>添加新闻s</title><br>//    <style type="text/css"><br>        input{<br>            height: 50px;<br>            width: 150px;<br>        }<br>    </style><br>//</head><br>//<body><br>//<center><br>//<div></div></center></body></html></p>
+<p>// </p><h3>请输入要添加的新闻内容</h3><br>// <form action="add_new.php" method="post"><br>//  <p>标题</p><br>//  <input type="text" name="title" placeholder="输入新闻标题"><br>//   <p>内容</p><br>//  <textarea type="content" cols="30" rows="10" placeholder="输入新闻内容"><br>//</textarea><br>//  <p>作者</p><br>//  <input type="text" name="auther" placeholder="输入新闻作者"><br>//  <p>预览图</p><br>//  &lt;input type=”text” name=”img_url”placeholder=”输入新闻预览图片地址” &gt;<br>//  <br><br>//   <input type="submit"><br>//</form><p></p>
+<p>//<br>//<br>//<br>//</p>
 <?php
 $title=base64_encode($_POST['title']);
 
@@ -311,11 +205,85 @@ fclose($f);
 echo "<script>alert('添加成功，跳转到展示页面');location.href='index.php';";
 
 ?>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ximendaguanren66.github.io/2019/08/12/xinwen/" data-id="cjz826z3g0001vorcyqxqziug" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-zuoye" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/06/zuoye/" class="article-date">
+  <time datetime="2019-08-06T12:05:41.000Z" itemprop="datePublished">2019-08-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/06/zuoye/">PHP 基础语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-if-els"><a href="#1-if-els" class="headerlink" title="1. if__els__"></a>1. if__els__</h1><p>//        &lt;?php</p>
+<p>//     if(){        //括号中放条件<br>//      执行指令1<br>//        }else{<br>//       执行指令2<br>//        }<br>//            ?&gt;</p>
+<h1 id="2-switch-case"><a href="#2-switch-case" class="headerlink" title="2.  switch__case__"></a>2.  switch__case__</h1><p> //      &lt;? php</p>
+<p>  //      switch ()  //括号中放条件<br> //       {<br>  //      case 条件1:<br>  //      执行指令1<br>  //       break; </p>
+<p>  //      case 条件2:<br>  //     执行指令2<br>  //      break;</p>
+<p>  //      default:<br>  //     默认指令<br>  //     }<br> //      ?&gt;<br>先判断条件，条件的返回值为条件1，则执行指令1;条件返回的值为条件2，则执行指令2;<br>条件的返回值既不是条件1也不是条件2，则执行默认指令。<br>break的作用是结束switch，使用 switch 语句可以避免冗长的 “if..else ；if..else”代码块。</p>
+<h1 id="3-while循"><a href="#3-while循" class="headerlink" title="3. while循"></a>3. while循</h1><p> //      &lt;?php</p>
+<p> //     while(){   //括号中放条件<br>//      执行指令</p>
+<p>//        }<br>//        ?&gt;</p>
+<p>首先判断某个条件是否符合，符合则执行任务，执行完毕任务，再判断条件是否满足要求，符合则重复执行此任务，否则结束任务。</p>
+<h2 id="4-php数据类型"><a href="#4-php数据类型" class="headerlink" title="4.php数据类型"></a>4.php数据类型</h2><p>//布 尔 型： True false (不区分大小写);<br>//整    型： 0，正负无穷到某个数值;<br>//浮点  型： 小数;<br>//字符  串： 带引号或者双引号的，以及&gt;&gt;&gt;EOF   EOF 之间的;<br>//数    组： [1,2,3,4,5] 索引数组，[“name”=&gt;”25”] 关联数组;<br>//空      ：  NULL （不区分大小写）;<br>//资源类型： STDIN,STDOUT。</p>
+<h1 id="5-三元运算符"><a href="#5-三元运算符" class="headerlink" title="5.  三元运算符"></a>5.  三元运算符</h1><p>  语法格式：<br>  {expr1}?(expr2):(expr3)<br>  ?前边放条件，条件为真，返回冒号前面的值。为假返回冒号后面的值<br> 应用实例：<br> &lt;?php<br> $test = ‘大教程’;<br> //普通写法<br> $username = isset(test)?$test:’nobody’;</p>
+<p> echo $username,PHP_EOL;</p>
+<p> // PHP5.3+版本写法<br> $username = $test?:’nobody’;<br> echo $username,PHP_EOL;</p>
+<p> ?&gt;</p>
+<p> #特殊函数</p>
+<h1 id="6-addslashes（用于防御sql注入函数）"><a href="#6-addslashes（用于防御sql注入函数）" class="headerlink" title="6 .addslashes（用于防御sql注入函数）"></a>6 .addslashes（用于防御sql注入函数）</h1><p>  <em>*在字符串内的单引号(‘ ‘)，双引号(“ “)，空(  )，斜杠( \ ) ;前添加斜杠\。<br>/</em><br>&lt;? php</p>
+<p>$str=”ni hao ‘zs’ !”;</p>
+<p>$str1=  addslashes ($str);</p>
+<p>echo  $str1;</p>
+<p>?&gt;<br>*/</p>
+<h1 id="7-bin2hex-“-n”"><a href="#7-bin2hex-“-n”" class="headerlink" title="7.bin2hex(“\n”);"></a>7.bin2hex(“\n”);</h1><p>// ascii码  计算ascii码</p>
+<p> bin2hex() 函数把 ASCII 字符的字符串转换为十六进制值。<br> 字符串可通过使用 pack() 函数再转换回去。<br>/*<br> &lt;?php</p>
+<p>   $str = “Hello world!”;</p>
+<p>   echo bin2hex($str) . “<br>“;</p>
+<p>   echo pack(“H*”,bin2hex($str)) . “<br>“;<br>  ?&gt;<br>   */</p>
+<h1 id="8-作业"><a href="#8-作业" class="headerlink" title="8.作业"></a>8.作业</h1><p>   //水仙花数<br>&lt;?php</p>
+<p>for ($i=1;$i&lt;9;$i++) {<br>    for ($j = 0; $j &lt; 9; $j++) {<br>        for ($n = 0; $n &lt; 9; $n++) {<br>            if (100<em>$i + 10</em>$j + $n ==$i* $i<em>$i + $j</em>$j<em>$j + $n</em>$n*$n) {<br>                echo “$i$j$n” . “是水仙花数!\n”;<br>            }<br>    }<br>    }<br>}<br>？&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//重复显示输入成绩栏</span><br></pre></td></tr></table></figure>
+
+<p>  $n =fgets(STDIN);<br>   while (1) {<br>    echo “输入成绩：\n”;<br>    $n = fgets(STDIN);<br>    $n = trim($n);<br>    if ($n == ‘q’ || $n == ‘quit’ || $n == ‘exit’) {<br>        die(‘退出程序！’);<br>    }<br>    settype($n, “int”);<br>    if ($n &gt; 100 || $n &lt;= 0) {<br>        echo “输入成绩是错误！ \n”;<br>        continue;        //跳出本次循环<br>    }<br>    if ($n &gt;= 90 &amp;&amp; $n &lt;= 100) {<br>        echo “成绩为{$n},属于A级！”;<br>    } elseif ($n &lt; 90 &amp;&amp; $n &gt;= 60) {<br>        echo “成绩为{$n},属于B级！”;<br>    } else {<br>        echo “成绩为{$n},属于C级！”;<br>    }<br>}</p>
+<p>?&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//循环输出一周</span><br></pre></td></tr></table></figure>
+
+<p>  while ($n&lt;7) {<br>    ++$n;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if ($n &gt;= 1 &amp;&amp; $n &lt;=5) &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   上课!\n&quot;;</span><br><span class="line">&#125; elseif ($n == 6) &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   休息\n&quot;;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   洗衣服\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>}<br>？&gt;</p>
+<p>​    </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ximendaguanren66.github.io/2019/08/12/xinwen/" data-id="cjz816wcs00011orcbsfrthfj" class="article-share-link">Share</a>
+      <a data-url="http://ximendaguanren66.github.io/2019/08/06/zuoye/" data-id="cjz826z3g0002vorc02g80rwq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -327,8 +295,8 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
   
     <article id="post-a" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/08/12/a/" class="article-date">
-  <time datetime="2019-08-12T05:53:37.000Z" itemprop="datePublished">2019-08-12</time>
+    <a href="/2017/09/15/a/" class="article-date">
+  <time datetime="2017-09-15T11:00:41.000Z" itemprop="datePublished">2017-09-15</time>
 </a>
     
   </div>
@@ -339,7 +307,7 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/12/a/">a</a>
+      <a class="article-title" href="/2017/09/15/a/">搭建的apache + php + mysql的环境（要求使用php5.6）</a>
     </h1>
   
 
@@ -347,11 +315,17 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>＃安装httpd<br> yum install httpd httpd-devel httpd-manual mod_ssl -y<br>＃启动apache<br> systemctl start httpd<br>＃设置apache开机启动<br> systemctl enable httpd<br>＃查看开放端口，检查有没有httpd服务，80和443端口是否开放<br> ss -antlp<br>配置防火墙，可以正常访问阿帕奇</p>
+<p>firewall-cmd –zone = public –add-port = 80 / tcp<br>–permanent firewall-cmd –zone = public –add-port = 433 / tcp<br>–permanent firewall-cmd –reload</p>
+<p>安装php5.6<br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/epel-release.rpm" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/epel-release.rpm</a><br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/webtatic-release.rpm#overload" target="_blank" rel="noopener">https://mirror.webtatic.com/yum/el7/webtatic-release.rpm#overload</a><br>system. php<br> yum删除php-common -y </p>
+<p>＃安装php5.6和php扩展<br> yum install -y php56w php56w-opcache php56w-xml php56w-mcrypt php56w-gd php56w-mysql php56w-intl php56w-mbstring </p>
+<p>＃进入网站根目录<br>cd / var / www / html /<br>＃在网站根目录中创建index.php，<br>写入phpinfo函数，测试网站php是否正常<br>echo  ‘&lt;？php phpinfo（）;？&gt;’ &gt; index.php</p>
+<p>安装MariaDB的<br>yum install mariadb-server -y<br>＃启动mariadb-server<br> systemctl start mariadb<br>＃设置mariadb-server开机自启<br> systemctl enablemariadb<br>＃ mysql初始化，注意记住mysql密码<br> mysql_secure_installation<br>＃ 重启mariadb服务，读取my.cnf新配置<br>systemctl restart mariadb<br>＃ 登录数据库，查看字符编码<br>mysql -uroot -p<br>输入 \s  查看编码 </p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ximendaguanren66.github.io/2019/08/12/a/" data-id="cjz816wci00001orcqpzqofri" class="article-share-link">Share</a>
+      <a data-url="http://ximendaguanren66.github.io/2017/09/15/a/" data-id="cjz826z2z0000vorcj5o8ra34" class="article-share-link">Share</a>
       
       
     </footer>
@@ -379,7 +353,7 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
     </div>
   </div>
 
@@ -396,7 +370,11 @@ echo "<script>alert('添加成功，跳转到展示页面');location.href='index
           </li>
         
           <li>
-            <a href="/2019/08/12/a/">a</a>
+            <a href="/2019/08/06/zuoye/">PHP 基础语法</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/15/a/">搭建的apache + php + mysql的环境（要求使用php5.6）</a>
           </li>
         
       </ul>

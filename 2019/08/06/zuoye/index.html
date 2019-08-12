@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>PHP 基础语法 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1. if__els__//        &amp;lt;?php //     if(){        //括号中放条件//      执行指令1//        }else{//       执行指令2//        }//            ?&amp;gt; 2.  switch__case__ //      &amp;lt;? php   //      switch ()  //括号中放条件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP 基础语法">
+<meta property="og:url" content="http://ximendaguanren66.github.io/2019/08/06/zuoye/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. if__els__//        &amp;lt;?php //     if(){        //括号中放条件//      执行指令1//        }else{//       执行指令2//        }//            ?&amp;gt; 2.  switch__case__ //      &amp;lt;? php   //      switch ()  //括号中放条件">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-12T06:48:57.033Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PHP 基础语法">
+<meta name="twitter:description" content="1. if__els__//        &amp;lt;?php //     if(){        //括号中放条件//      执行指令1//        }else{//       执行指令2//        }//            ?&amp;gt; 2.  switch__case__ //      &amp;lt;? php   //      switch ()  //括号中放条件">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ximendaguanren66.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-zuoye" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/06/zuoye/" class="article-date">
+  <time datetime="2019-08-06T12:05:41.000Z" itemprop="datePublished">2019-08-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PHP 基础语法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-if-els"><a href="#1-if-els" class="headerlink" title="1. if__els__"></a>1. if__els__</h1><p>//        &lt;?php</p>
+<p>//     if(){        //括号中放条件<br>//      执行指令1<br>//        }else{<br>//       执行指令2<br>//        }<br>//            ?&gt;</p>
+<h1 id="2-switch-case"><a href="#2-switch-case" class="headerlink" title="2.  switch__case__"></a>2.  switch__case__</h1><p> //      &lt;? php</p>
+<p>  //      switch ()  //括号中放条件<br> //       {<br>  //      case 条件1:<br>  //      执行指令1<br>  //       break; </p>
+<p>  //      case 条件2:<br>  //     执行指令2<br>  //      break;</p>
+<p>  //      default:<br>  //     默认指令<br>  //     }<br> //      ?&gt;<br>先判断条件，条件的返回值为条件1，则执行指令1;条件返回的值为条件2，则执行指令2;<br>条件的返回值既不是条件1也不是条件2，则执行默认指令。<br>break的作用是结束switch，使用 switch 语句可以避免冗长的 “if..else ；if..else”代码块。</p>
+<h1 id="3-while循"><a href="#3-while循" class="headerlink" title="3. while循"></a>3. while循</h1><p> //      &lt;?php</p>
+<p> //     while(){   //括号中放条件<br>//      执行指令</p>
+<p>//        }<br>//        ?&gt;</p>
+<p>首先判断某个条件是否符合，符合则执行任务，执行完毕任务，再判断条件是否满足要求，符合则重复执行此任务，否则结束任务。</p>
+<h2 id="4-php数据类型"><a href="#4-php数据类型" class="headerlink" title="4.php数据类型"></a>4.php数据类型</h2><p>//布 尔 型： True false (不区分大小写);<br>//整    型： 0，正负无穷到某个数值;<br>//浮点  型： 小数;<br>//字符  串： 带引号或者双引号的，以及&gt;&gt;&gt;EOF   EOF 之间的;<br>//数    组： [1,2,3,4,5] 索引数组，[“name”=&gt;”25”] 关联数组;<br>//空      ：  NULL （不区分大小写）;<br>//资源类型： STDIN,STDOUT。</p>
+<h1 id="5-三元运算符"><a href="#5-三元运算符" class="headerlink" title="5.  三元运算符"></a>5.  三元运算符</h1><p>  语法格式：<br>  {expr1}?(expr2):(expr3)<br>  ?前边放条件，条件为真，返回冒号前面的值。为假返回冒号后面的值<br> 应用实例：<br> &lt;?php<br> $test = ‘大教程’;<br> //普通写法<br> $username = isset(test)?$test:’nobody’;</p>
+<p> echo $username,PHP_EOL;</p>
+<p> // PHP5.3+版本写法<br> $username = $test?:’nobody’;<br> echo $username,PHP_EOL;</p>
+<p> ?&gt;</p>
+<p> #特殊函数</p>
+<h1 id="6-addslashes（用于防御sql注入函数）"><a href="#6-addslashes（用于防御sql注入函数）" class="headerlink" title="6 .addslashes（用于防御sql注入函数）"></a>6 .addslashes（用于防御sql注入函数）</h1><p>  <em>*在字符串内的单引号(‘ ‘)，双引号(“ “)，空(  )，斜杠( \ ) ;前添加斜杠\。<br>/</em><br>&lt;? php</p>
+<p>$str=”ni hao ‘zs’ !”;</p>
+<p>$str1=  addslashes ($str);</p>
+<p>echo  $str1;</p>
+<p>?&gt;<br>*/</p>
+<h1 id="7-bin2hex-“-n”"><a href="#7-bin2hex-“-n”" class="headerlink" title="7.bin2hex(“\n”);"></a>7.bin2hex(“\n”);</h1><p>// ascii码  计算ascii码</p>
+<p> bin2hex() 函数把 ASCII 字符的字符串转换为十六进制值。<br> 字符串可通过使用 pack() 函数再转换回去。<br>/*<br> &lt;?php</p>
+<p>   $str = “Hello world!”;</p>
+<p>   echo bin2hex($str) . “<br>“;</p>
+<p>   echo pack(“H*”,bin2hex($str)) . “<br>“;<br>  ?&gt;<br>   */</p>
+<h1 id="8-作业"><a href="#8-作业" class="headerlink" title="8.作业"></a>8.作业</h1><p>   //水仙花数<br>&lt;?php</p>
+<p>for ($i=1;$i&lt;9;$i++) {<br>    for ($j = 0; $j &lt; 9; $j++) {<br>        for ($n = 0; $n &lt; 9; $n++) {<br>            if (100<em>$i + 10</em>$j + $n ==$i* $i<em>$i + $j</em>$j<em>$j + $n</em>$n*$n) {<br>                echo “$i$j$n” . “是水仙花数!\n”;<br>            }<br>    }<br>    }<br>}<br>？&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//重复显示输入成绩栏</span><br></pre></td></tr></table></figure>
+
+<p>  $n =fgets(STDIN);<br>   while (1) {<br>    echo “输入成绩：\n”;<br>    $n = fgets(STDIN);<br>    $n = trim($n);<br>    if ($n == ‘q’ || $n == ‘quit’ || $n == ‘exit’) {<br>        die(‘退出程序！’);<br>    }<br>    settype($n, “int”);<br>    if ($n &gt; 100 || $n &lt;= 0) {<br>        echo “输入成绩是错误！ \n”;<br>        continue;        //跳出本次循环<br>    }<br>    if ($n &gt;= 90 &amp;&amp; $n &lt;= 100) {<br>        echo “成绩为{$n},属于A级！”;<br>    } elseif ($n &lt; 90 &amp;&amp; $n &gt;= 60) {<br>        echo “成绩为{$n},属于B级！”;<br>    } else {<br>        echo “成绩为{$n},属于C级！”;<br>    }<br>}</p>
+<p>?&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//循环输出一周</span><br></pre></td></tr></table></figure>
+
+<p>  while ($n&lt;7) {<br>    ++$n;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if ($n &gt;= 1 &amp;&amp; $n &lt;=5) &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   上课!\n&quot;;</span><br><span class="line">&#125; elseif ($n == 6) &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   休息\n&quot;;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    echo &quot;今天星期&#123;$n&#125;   洗衣服\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>}<br>？&gt;</p>
+<p>​    </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ximendaguanren66.github.io/2019/08/06/zuoye/" data-id="cjz826z3g0002vorc02g80rwq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/12/xinwen/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/15/a/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">搭建的apache + php + mysql的环境（要求使用php5.6）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/12/xinwen/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/06/zuoye/">PHP 基础语法</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/15/a/">搭建的apache + php + mysql的环境（要求使用php5.6）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
