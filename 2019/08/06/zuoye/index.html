@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://ximendaguanren66.github.io">
   <title>PHP 基础语法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. if__els__1234567891011        &amp;lt;?php    if()&amp;#123;        //括号中放条件     执行指令1       &amp;#125;else&amp;#123;     执行指令2       &amp;#125;           ?&amp;gt;```           # 2.  switch__case__      先判断条件，条件的返回值为条件1，">
+  <meta name="description" content="PHP 基础语法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP 基础语法">
 <meta property="og:url" content="http://ximendaguanren66.github.io/2019/08/06/zuoye/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1. if__els__1234567891011        &amp;lt;?php    if()&amp;#123;        //括号中放条件     执行指令1       &amp;#125;else&amp;#123;     执行指令2       &amp;#125;           ?&amp;gt;```           # 2.  switch__case__      先判断条件，条件的返回值为条件1，">
+<meta property="og:description" content="PHP 基础语法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-12T09:01:49.230Z">
+<meta property="og:updated_time" content="2019-08-13T00:38:17.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP 基础语法">
-<meta name="twitter:description" content="1. if__els__1234567891011        &amp;lt;?php    if()&amp;#123;        //括号中放条件     执行指令1       &amp;#125;else&amp;#123;     执行指令2       &amp;#125;           ?&amp;gt;```           # 2.  switch__case__      先判断条件，条件的返回值为条件1，">
+<meta name="twitter:description" content="PHP 基础语法">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -50,7 +50,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">KYP</a></h1>
 		</hgroup>
 		
 
@@ -108,7 +108,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">KYP</h1>
 			</hgroup>
 			
 			
@@ -174,26 +174,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1-if-els"><a href="#1-if-els" class="headerlink" title="1. if__els__"></a>1. if__els__</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">        &lt;?php</span><br><span class="line"></span><br><span class="line">    if()&#123;        //括号中放条件</span><br><span class="line">     执行指令1</span><br><span class="line">       &#125;else&#123;</span><br><span class="line">     执行指令2</span><br><span class="line">       &#125;</span><br><span class="line">           ?&gt;</span><br><span class="line">```           </span><br><span class="line"></span><br><span class="line"># 2.  switch__case__</span><br></pre></td></tr></table></figure>
+        <p>PHP 基础语法</p>
+<a id="more"></a>
 
-  <? php
+<h1 id="1-if-els"><a href="#1-if-els" class="headerlink" title="1. if__els__"></a>1. if__els__</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">        &lt;?php</span><br><span class="line"></span><br><span class="line">    if()&#123;        //括号中放条件</span><br><span class="line">     执行指令1</span><br><span class="line">       &#125;else&#123;</span><br><span class="line">     执行指令2</span><br><span class="line">       &#125;</span><br><span class="line">           ?&gt;</span><br><span class="line">```           </span><br><span class="line"></span><br><span class="line"># 2.  switch__case__</span><br></pre></td></tr></table></figure>
+
+   <? php
 
    switch ()  //括号中放条件
      {
         case 条件1:
-       执行指令1
+       //执行指令1
        break; 
 
       case 条件2:
-       执行指令2
+       //执行指令2
        break;
 
       default:
-       默认指令
+       //默认指令
        }
        ?>
 
-<p>先判断条件，条件的返回值为条件1，则执行指令1;条件返回的值为条件2，则执行指令2;<br>条件的返回值既不是条件1也不是条件2，则执行默认指令。<br>break的作用是结束switch，使用 switch 语句可以避免冗长的 “if..else ；if..else”代码块。</p>
+<p>   先判断条件，条件的返回值为条件1，则执行指令1;条件返回的值为条件2，则执行指令2;<br>条件的返回值既不是条件1也不是条件2，则执行默认指令。<br>break的作用是结束switch，使用 switch 语句可以避免冗长的 “if..else ；if..else”代码块。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 3. while循</span><br></pre></td></tr></table></figure>
 
 <pre><code>&lt;?php
@@ -206,39 +209,26 @@ while(){   //括号中放条件
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 4.php数据类型</span><br></pre></td></tr></table></figure>
 
 <p>布 尔 型： True false (不区分大小写);<br>整    型： 0，正负无穷到某个数值;<br>浮点  型： 小数;<br>字符  串： 带引号或者双引号的，以及&gt;&gt;&gt;EOF   EOF 之间的;<br>数    组： [1,2,3,4,5] 索引数组，[“name”=&gt;”25”] 关联数组;<br>空      ：  NULL （不区分大小写）;<br>资源类型： STDIN,STDOUT。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 5.  三元运算符</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 5.  三元运算符</span><br><span class="line"></span><br><span class="line">语法格式：</span><br><span class="line">&#123;expr1&#125;?(expr2):(expr3)</span><br><span class="line"> ?前边放条件，条件为真，返回冒号前面的值。为假返回冒号后面的值</span><br><span class="line">应用实例：</span><br></pre></td></tr></table></figure>
 
-<p>语法格式：<br>{expr1}?(expr2):(expr3)<br> ?前边放条件，条件为真，返回冒号前面的值。为假返回冒号后面的值<br>应用实例：<br> &lt;?php<br> $test = ‘大教程’;<br> 普通写法<br> $username = isset(test)?$test:’nobody’;</p>
-<p> echo $username,PHP_EOL;</p>
-<p> PHP5.3+版本写法<br> $username = $test?:’nobody’;<br> echo $username,PHP_EOL;</p>
-<p> ?&gt;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">##特殊函数</span><br><span class="line"># 6 .addslashes（用于防御sql注入函数）</span><br></pre></td></tr></table></figure>
-
-<p>  在字符串内的单引号(‘ ‘)，双引号(“ “)，空(  )，斜杠( \ ) ;前添加斜杠\。</p>
-<? php
-
-$str="ni hao 'zs' !";
-
-$str1=  addslashes ($str);
-
-echo  $str1;
-
-?>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 7.bin2hex(“\n”);</span><br></pre></td></tr></table></figure>
-
-<p> ascii码  计算ascii码</p>
-<p> bin2hex() 函数把 ASCII 字符的字符串转换为十六进制值。<br> 字符串可通过使用 pack() 函数再转换回去。</p>
  <?php
+ $test = '大教程';
+ 普通写法
+ $username = isset(test)?$test:'nobody';
 
-   $str = "Hello world!";
+ echo $username,PHP_EOL;
 
-   echo bin2hex($str) . "<br>";
+ PHP5.3+版本写法
+ $username = $test?:'nobody';
+ echo $username,PHP_EOL;
 
-   echo pack("H*",bin2hex($str)) . "<br>";
-  ?><p> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"># 8.作业</span><br></pre></td></tr></table></figure>
+ ?>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">##特殊函数</span><br><span class="line"># 6 .addslashes（用于防御sql注入函数）</span><br><span class="line"></span><br><span class="line">  在字符串内的单引号(&apos; &apos;)，双引号(&quot; &quot;)，空(  )，斜杠( \ ) ;前添加斜杠\。</span><br><span class="line">```   </span><br><span class="line">&lt;? php</span><br><span class="line"></span><br><span class="line">$str=&quot;ni hao &apos;zs&apos; !&quot;;</span><br><span class="line"></span><br><span class="line">$str1=  addslashes ($str);</span><br><span class="line"></span><br><span class="line">echo  $str1;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
-<p>   水仙花数</p>
+<h1 id="7-bin2hex-“-n”"><a href="#7-bin2hex-“-n”" class="headerlink" title="7.bin2hex(“\n”);"></a>7.bin2hex(“\n”);</h1><p> ascii码  计算ascii码</p>
+<p> bin2hex() 函数把 ASCII 字符的字符串转换为十六进制值。<br> 字符串可通过使用 pack() 函数再转换回去。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> &lt;?php</span><br><span class="line"></span><br><span class="line">   $str = &quot;Hello world!&quot;;</span><br><span class="line"></span><br><span class="line">   echo bin2hex($str) . &quot;&lt;br&gt;&quot;;</span><br><span class="line"></span><br><span class="line">   echo pack(&quot;H*&quot;,bin2hex($str)) . &quot;&lt;br&gt;&quot;;</span><br><span class="line">  ?&gt; </span><br><span class="line">```   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 8.作业</span><br><span class="line"></span><br><span class="line">   水仙花数</span><br></pre></td></tr></table></figure>
+
 <?php
 
 for ($i=1;$i<9;$i++) {
@@ -251,9 +241,7 @@ for ($i=1;$i<9;$i++) {
     }
 }
 ？>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
- #重复显示输入成绩栏
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#重复显示输入成绩栏</span><br></pre></td></tr></table></figure>
 
 <?php
 
@@ -274,9 +262,9 @@ for ($i=1;$i<9;$i++) {
 }
 
 ?>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">循环输出一周</span><br></pre></td></tr></table></figure>
 
-<p>循环输出一周<br>&lt;?php<br>  while ($n&lt;7) {<br>    ++$n;</p>
+<p>&lt;?php<br>  while ($n&lt;7) {<br>    ++$n;</p>
 <p>if ($n &gt;= 1 &amp;&amp; $n &lt;=5) {<br>    echo “今天星期{$n}   上课!\n”;<br>} elseif ($n == 6) {<br>    echo “今天星期{$n}   休息\n”;<br>} else {<br>    echo “今天星期{$n}   洗衣服\n”;<br>}</p>
 <p>}<br>？&gt;<br>```</p>
 <p>​    </p>
@@ -373,11 +361,11 @@ for ($i=1;$i<9;$i++) {
   
 <nav id="article-nav">
   
-    <a href="/2019/08/06/wjx/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/08/12/xinwen/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          作业
+          (no title)
         
       </div>
     </a>
@@ -427,7 +415,7 @@ for ($i=1;$i<9;$i++) {
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 John Doe
+    		&copy; 2019 KYP
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
