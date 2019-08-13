@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="＃安装httpd yum install httpd httpd-devel httpd-manual mod_ssl -y＃启动apache systemctl start httpd＃设置apache开机启动 systemctl enable httpd＃查看开放端口，检查有没有httpd服务，80和443端口是否开放 ss -antlp配置防火墙，可以正常访问阿帕奇 firewall-c">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-13T00:31:29.362Z">
+<meta property="og:updated_time" content="2019-08-13T00:43:34.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建的apache + php + mysql的环境（要求使用php5.6）">
 <meta name="twitter:description" content="＃安装httpd yum install httpd httpd-devel httpd-manual mod_ssl -y＃启动apache systemctl start httpd＃设置apache开机启动 systemctl enable httpd＃查看开放端口，检查有没有httpd服务，80和443端口是否开放 ss -antlp配置防火墙，可以正常访问阿帕奇 firewall-c">
@@ -182,7 +182,7 @@
 <p>＃安装php5.6和php扩展<br> yum install -y php56w php56w-opcache php56w-xml php56w-mcrypt php56w-gd php56w-mysql php56w-intl php56w-mbstring </p>
 <p>＃进入网站根目录<br>cd / var / www / html /<br>＃在网站根目录中创建index.php，<br>写入phpinfo函数，测试网站php是否正常<br>echo  ‘&lt;？php phpinfo（）;？&gt;’ &gt; index.php</p>
 <p>安装MariaDB的<br>yum install mariadb-server -y<br>＃启动mariadb-server<br> systemctl start mariadb<br>＃设置mariadb-server开机自启<br> systemctl enablemariadb<br>＃ mysql初始化，注意记住mysql密码<br> mysql_secure_installation<br>＃ 重启mariadb服务，读取my.cnf新配置<br>systemctl restart mariadb<br>＃ 登录数据库，查看字符编码<br>mysql -uroot -p<br>输入 \s  查看编码 </p>
-
+<!--more-->
       
 
       
